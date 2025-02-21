@@ -821,7 +821,7 @@ const EditPost = () => {
 
                       {/* Editor Content */}
                       <EditorContent
-                        className="prose max-w-none border-2 border-gray-300"
+                        className="prose max-w-none overflow-y-scroll h-[80vh] border-2 border-gray-300"
                         editor={editor}
                       />
                     </div>
