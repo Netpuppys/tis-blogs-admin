@@ -5,7 +5,7 @@ const PaginationHandler: React.FC<{
   setPageNumber: Dispatch<SetStateAction<number>>;
 }> = ({ totalResults, setPageNumber }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const resultsPerPage: number = 20;
+  const resultsPerPage: number = 10;
 
   const totalPages: number = Math.ceil(totalResults / resultsPerPage);
   const startIndex: number = (currentPage - 1) * resultsPerPage + 1;
